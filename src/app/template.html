@@ -1,7 +1,3 @@
-<div [ngClass]="'text-white m-2 p-2 ' + getClasses()"
-    [textContent]="'Name: ' + (model.getProduct(1)?.name || 'None')">
-</div>
-
 <div [ngClass]="'text-white m-2 p-2 ' + getClasses()">
     Name: {{ model.getProduct(1)?.name || 'None' }}
 </div>
