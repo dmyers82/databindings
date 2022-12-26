@@ -12,4 +12,13 @@ export class ProductComponent {
         console.log("component.ts - getClasses called. product price is " + product.price);
         return "p-2 " + (product.price < 50 ? "bg-info" : "bg-warning");
     }
+
+    getClassMap(key: number): Object {
+        let product = this.model.getProduct(key);
+        return {
+                "text-center bg-danger": product.name == "Kayak",
+                "bg-info": product.price < 50
+        };
+  
+    }
 }
