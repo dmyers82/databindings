@@ -21,4 +21,7 @@ export class ProductComponent {
         };
   
     }
+
+    fontSizeWithUnits: string = "30px";
+    fontSizeWithoutUnits: string= "30";
 }
